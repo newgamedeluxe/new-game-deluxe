@@ -1,0 +1,25 @@
+name: Bug report
+description: Something in New Game Deluxe is broken or confusing
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      placeholder: "0.1.0"
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what actually happened.
+    validations: { required: true }
+  - type: textarea
+    id: log
+    attributes:
+      label: BepInEx log
+      description: Paste or attach LogOutput.log (r2modman: Settings > Browse profile folder > BepInEx).
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods installed
