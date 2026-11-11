@@ -1,25 +1,61 @@
 name: Bug report
-description: Something in New Game Deluxe is broken or confusing
+description: Something in New Game Deluxe is broken, crashes or confuses you
 labels: [bug]
 body:
   - type: input
     id: version
     attributes:
       label: Mod version
-      placeholder: "0.1.0"
+      description: The number on the Thunderstore page or in your mod manager.
+    validations: { required: true }
+  - type: dropdown
+    id: class
+    attributes:
+      label: Class
+      options:
+        - Mage
+        - Berserker
+        - One of the unfinished classes
+        - Not class specific or not sure
+    validations: { required: true }
+  - type: dropdown
+    id: mode
+    attributes:
+      label: How you were playing
+      options:
+        - Single player
+        - Hosting for friends
+        - Joined a friend's game
+        - Dedicated server
+    validations: { required: true }
+  - type: input
+    id: level
+    attributes:
+      label: Class level and biome
+      description: Roughly is fine, for example "level 14, Black Forest".
+  - type: textarea
+    id: steps
+    attributes:
+      label: What you did
+      description: The steps that lead to the problem, if you know them.
     validations: { required: true }
   - type: textarea
-    id: what
+    id: result
     attributes:
-      label: What happened
-      description: What you did, what you expected, what actually happened.
+      label: What you expected and what happened instead
     validations: { required: true }
   - type: textarea
     id: log
     attributes:
       label: BepInEx log
-      description: Paste or attach LogOutput.log (r2modman: Settings > Browse profile folder > BepInEx).
+      description: "Optional but very helpful. Drag LogOutput.log in here. In r2modman: Settings > Browse profile folder > BepInEx."
   - type: textarea
     id: mods
     attributes:
       label: Other mods installed
+      description: Optional. A list or a mod manager profile code.
+  - type: input
+    id: game
+    attributes:
+      label: Valheim version
+      description: Optional. Shown at the bottom of the game's main menu.

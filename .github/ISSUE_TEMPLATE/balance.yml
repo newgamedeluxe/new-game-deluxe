@@ -1,0 +1,30 @@
+name: Balance and feel
+description: Something is too strong, too weak, too slow or just feels off
+labels: [balance]
+body:
+  - type: dropdown
+    id: class
+    attributes:
+      label: Class
+      options:
+        - Mage
+        - Berserker
+        - One of the unfinished classes
+        - Not class specific
+    validations: { required: true }
+  - type: input
+    id: build
+    attributes:
+      label: Level, build and biome
+      description: Roughly is fine, for example "level 22 frost Caster, Swamp".
+  - type: textarea
+    id: what
+    attributes:
+      label: What felt off
+      description: The ability, talent, enemy or stretch of leveling, and how it felt.
+    validations: { required: true }
+  - type: input
+    id: settings
+    attributes:
+      label: World difficulty and changed settings
+      description: Optional. World modifiers, and anything you changed under Tuning in the mod's settings.

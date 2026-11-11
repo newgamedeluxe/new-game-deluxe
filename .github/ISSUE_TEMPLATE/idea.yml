@@ -1,9 +1,10 @@
-name: Idea or feedback
-description: A suggestion, or something that felt off
-labels: [idea]
+name: Idea
+description: A feature, class or change you would like to see
+labels: [enhancement]
 body:
   - type: textarea
     id: idea
     attributes:
       label: What would you like to see or change
+      description: Say what you were trying to do or what is missing. Ideas are read, not promised.
     validations: { required: true }
