@@ -1,4 +1,4 @@
-<img src="icon.png" alt="New Game Deluxe spellbook icon" width="128">
+<img src="banner.png" alt="New Game Deluxe" width="100%">
 
 # New Game Deluxe
 
